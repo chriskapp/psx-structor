@@ -1,0 +1,32 @@
+{
+  "name": "psx/structor",
+  "description": "Build complex data structures through a simple interface",
+  "keywords": ["Data", "Structures"],
+  "homepage": "http://phpsx.org",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Christoph Kappestein",
+      "email": "k42b3.x@gmail.com",
+      "homepage": "http://k42b3.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8",
+    "phpunit/dbunit": "^2.0",
+    "doctrine/dbal": "^2.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Structor\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Structor\\": "tests/"
+    }
+  }
+}

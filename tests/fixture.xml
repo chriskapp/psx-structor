@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<dataset>
+    <news id="1" authorId="1" title="foo" createDate="2016-03-01 00:00:00" />
+    <news id="2" authorId="1" title="bar" createDate="2016-03-01 00:00:00" />
+    <author id="1" name="Foo Bar" uri="http://phpsx.org" />
+</dataset>
