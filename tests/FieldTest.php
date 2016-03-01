@@ -51,7 +51,7 @@ class FieldTest extends DbTestCase
     "fields": {
         "boolean": true,
         "callback": "Foo",
-        "dateTime": "2016-03-01T00:00:00+01:00",
+        "dateTime": "2016-03-01T00:00:00+00:00",
         "float": 1.4,
         "integer": 2,
         "replace": "http:\/\/foobar.com\/entry\/2",

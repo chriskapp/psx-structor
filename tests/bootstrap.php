@@ -27,3 +27,5 @@ function getConnection() {
 
     return $connection;
 }
+
+date_default_timezone_set('UTC');
