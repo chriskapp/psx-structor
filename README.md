@@ -40,7 +40,7 @@ In example if you want to provide the following JSON based on a SQL database:
 }
 ```
 
-To produce such an result we first need to get the data from the database. Today
+To produce such a result we first need to get the data from the database. Today
 most database libraries or ORMs are not designed to produce such nested results.
 They either return a simple array or model objects in case of an ORM. Turning 
 these results into the desired format is mostly no easy task.
@@ -78,7 +78,7 @@ $definition = [
 $builder = new Builder();
 $result  = $builder->build($definition));
 
-// we can now i.e. json_encode the result
+// echo json_encode($result);
 ```
 
 In this example it would be much more performant to simply join the author table
