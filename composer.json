@@ -1,7 +1,7 @@
 {
   "name": "psx/structor",
   "description": "Build complex data structures through a simple interface",
-  "keywords": ["Data", "Structures"],
+  "keywords": ["data", "structures"],
   "homepage": "http://phpsx.org",
   "license": "MIT",
   "authors": [
