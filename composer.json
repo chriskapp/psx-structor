@@ -21,12 +21,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Structor\\": "src/"
+      "PSX\\Structor\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Structor\\": "tests/"
+      "PSX\\Structor\\": "tests/"
     }
   }
 }

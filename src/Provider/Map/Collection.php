@@ -8,9 +8,9 @@
  * that was distributed with this source code.
  */
 
-namespace Structor\Provider\Map;
+namespace PSX\Structor\Provider\Map;
 
-use Structor\Provider\ProviderCollectionInterface;
+use PSX\Structor\Provider\ProviderCollectionInterface;
 
 /**
  * Collection

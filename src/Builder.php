@@ -8,11 +8,11 @@
  * that was distributed with this source code.
  */
 
-namespace Structor;
+namespace PSX\Structor;
 
 use RuntimeException;
-use Structor\Provider\ProviderCollectionInterface;
-use Structor\Provider\ProviderEntityInterface;
+use PSX\Structor\Provider\ProviderCollectionInterface;
+use PSX\Structor\Provider\ProviderEntityInterface;
 
 /**
  * Main class of structor. The build method resolves the definition and calls 

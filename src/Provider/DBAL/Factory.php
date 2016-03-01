@@ -8,10 +8,10 @@
  * that was distributed with this source code.
  */
 
-namespace Structor\Provider\DBAL;
+namespace PSX\Structor\Provider\DBAL;
 
 use Doctrine\DBAL\Connection;
-use Structor\Provider\DatabaseFactoryInterface;
+use PSX\Structor\Provider\DatabaseFactoryInterface;
 
 /**
  * Factory

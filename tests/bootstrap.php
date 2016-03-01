@@ -8,7 +8,7 @@ function setupDatabase() {
     $connection = Doctrine\DBAL\DriverManager::getConnection(['url' => 'sqlite::memory:'], $config);
     $fromSchema = $connection->getSchemaManager()->createSchema();
 
-    $toSchema = Structor\TestSchema::getSchema();
+    $toSchema = PSX\Structor\TestSchema::getSchema();
     $queries  = $fromSchema->getMigrateToSql($toSchema, $connection->getDatabasePlatform());
 
     foreach ($queries as $query) {

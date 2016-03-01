@@ -8,9 +8,9 @@
  * that was distributed with this source code.
  */
 
-namespace Structor\Provider;
+namespace PSX\Structor\Provider;
 
-use Structor\ProviderTestCase;
+use PSX\Structor\ProviderTestCase;
 
 /**
  * MapTest

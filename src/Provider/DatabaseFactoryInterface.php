@@ -8,7 +8,7 @@
  * that was distributed with this source code.
  */
 
-namespace Structor\Provider;
+namespace PSX\Structor\Provider;
 
 /**
  * Factory interface for database provider

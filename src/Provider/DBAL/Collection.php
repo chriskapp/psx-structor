@@ -8,10 +8,10 @@
  * that was distributed with this source code.
  */
 
-namespace Structor\Provider\DBAL;
+namespace PSX\Structor\Provider\DBAL;
 
-use Structor\Provider\ProviderCollectionInterface;
-use Structor\Provider\DatabaseUtil;
+use PSX\Structor\Provider\ProviderCollectionInterface;
+use PSX\Structor\Provider\DatabaseUtil;
 
 /**
  * Collection

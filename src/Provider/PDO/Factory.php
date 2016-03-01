@@ -8,10 +8,10 @@
  * that was distributed with this source code.
  */
 
-namespace Structor\Provider\PDO;
+namespace PSX\Structor\Provider\PDO;
 
 use PDO;
-use Structor\Provider\DatabaseFactoryInterface;
+use PSX\Structor\Provider\DatabaseFactoryInterface;
 
 /**
  * Factory

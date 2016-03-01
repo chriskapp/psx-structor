@@ -8,10 +8,10 @@
  * that was distributed with this source code.
  */
 
-namespace Structor\Provider;
+namespace PSX\Structor\Provider;
 
 use RuntimeException;
-use Structor\Reference;
+use PSX\Structor\Reference;
 
 /**
  * DatabaseUtil

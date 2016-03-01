@@ -8,9 +8,9 @@
  * that was distributed with this source code.
  */
 
-namespace Structor\Field;
+namespace PSX\Structor\Field;
 
-use Structor\FieldInterface;
+use PSX\Structor\FieldInterface;
 
 /**
  * Value

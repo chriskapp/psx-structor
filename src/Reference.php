@@ -8,7 +8,7 @@
  * that was distributed with this source code.
  */
 
-namespace Structor;
+namespace PSX\Structor;
 
 /**
  * Represents a reference to another value inside the context

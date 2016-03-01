@@ -8,7 +8,7 @@
  * that was distributed with this source code.
  */
 
-namespace Structor;
+namespace PSX\Structor;
 
 use Doctrine\DBAL\Schema\Schema;
 

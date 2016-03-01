@@ -8,9 +8,9 @@
  * that was distributed with this source code.
  */
 
-namespace Structor;
+namespace PSX\Structor;
 
-use Structor\Provider\Map;
+use PSX\Structor\Provider\Map;
 
 /**
  * BuilderTest

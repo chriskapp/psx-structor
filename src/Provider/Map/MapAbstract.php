@@ -8,7 +8,7 @@
  * that was distributed with this source code.
  */
 
-namespace Structor\Provider\Map;
+namespace PSX\Structor\Provider\Map;
 
 /**
  * MapAbstract
