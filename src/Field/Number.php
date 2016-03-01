@@ -11,11 +11,11 @@
 namespace PSX\Structor\Field;
 
 /**
- * Float
+ * Number
  *
  * @author Christoph Kappestein <christoph.kappestein@gmail.com>
  */
-class Float extends TransformFieldAbstract
+class Number extends TransformFieldAbstract
 {
     protected function transform($value)
     {

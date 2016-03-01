@@ -25,7 +25,7 @@ class FieldTest extends DbTestCase
             'boolean' => '1',
             'callback' => 'foo',
             'dateTime' => '2016-03-01 00:00:00',
-            'float' => '1.4',
+            'number' => '1.4',
             'integer' => '2',
         ];
 
@@ -36,7 +36,7 @@ class FieldTest extends DbTestCase
                     return ucfirst($value);
                 }),
                 'dateTime' => new Field\DateTime('dateTime'),
-                'float' => new Field\Float('float'),
+                'number' => new Field\Number('number'),
                 'integer' => new Field\Integer('integer'),
                 'replace' => new Field\Replace('http://foobar.com/entry/{integer}'),
                 'value' => new Field\Value('bar'),
@@ -52,7 +52,7 @@ class FieldTest extends DbTestCase
         "boolean": true,
         "callback": "Foo",
         "dateTime": "2016-03-01T00:00:00+00:00",
-        "float": 1.4,
+        "number": 1.4,
         "integer": 2,
         "replace": "http:\/\/foobar.com\/entry\/2",
         "value": "bar"
