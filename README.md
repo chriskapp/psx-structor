@@ -50,9 +50,9 @@ customizable responses. To produce the response above we could write the
 following code:
 
 ```php
-use Structor\Field;
-use Structor\Provider\PDO;
-use Structor\Reference;
+use PSX\Structor\Field;
+use PSX\Structor\Provider\PDO;
+use PSX\Structor\Reference;
 
 $provider = new PDO\Factory($pdo);
 
