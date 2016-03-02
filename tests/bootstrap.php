@@ -5,7 +5,7 @@ require(__DIR__ . '/../vendor/autoload.php');
 // create the database schema if not available
 function setupDatabase() {
     $config     = new Doctrine\DBAL\Configuration();
-    $connection = Doctrine\DBAL\DriverManager::getConnection(['url' => 'sqlite::memory:'], $config);
+    $connection = Doctrine\DBAL\DriverManager::getConnection(['driver' => 'pdo_sqlite', 'memory' => true], $config);
     $fromSchema = $connection->getSchemaManager()->createSchema();
 
     $toSchema = PSX\Structor\TestSchema::getSchema();
@@ -22,7 +22,11 @@ function getConnection() {
     static $connection;
 
     if ($connection === null) {
-        $connection = setupDatabase();
+        try {
+            $connection = setupDatabase();
+        } catch (Doctrine\DBAL\DBALException $e) {
+            $connection = false;
+        }
     }
 
     return $connection;

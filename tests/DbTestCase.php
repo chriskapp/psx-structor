@@ -23,10 +23,14 @@ abstract class DbTestCase extends \PHPUnit_Extensions_Database_TestCase
 
     public function getConnection()
     {
-        global $connection;
+        $connection = getConnection();
+
+        if ($connection === false) {
+            $this->markTestSkipped('Connection not available');
+        }
 
         if (self::$con === null) {
-            self::$con = getConnection();
+            self::$con = $connection;
         }
 
         if ($this->connection === null) {

@@ -17,7 +17,7 @@ use PSX\Structor\Provider\Map;
  *
  * @author Christoph Kappestein <christoph.kappestein@gmail.com>
  */
-class FieldTest extends DbTestCase
+class FieldTest extends \PHPUnit_Framework_TestCase
 {
     public function testFields()
     {
