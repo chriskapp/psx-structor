@@ -11,7 +11,7 @@
 namespace PSX\Structor\Provider\PDO;
 
 use PDO;
-use PSX\Structor\Provider\DatabaseUtil;
+use PSX\Structor\Provider\ParameterResolver;
 
 /**
  * PDOAbstract
@@ -45,7 +45,7 @@ abstract class PDOAbstract
             $this->statment = $this->pdo->prepare($this->sql);
         }
 
-        $this->statment->execute(DatabaseUtil::resolve($this->parameters, $context));
+        $this->statment->execute(ParameterResolver::resolve($this->parameters, $context));
 
         return $this->statment;
     }

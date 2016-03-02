@@ -8,23 +8,15 @@
  * that was distributed with this source code.
  */
 
-namespace PSX\Structor\Provider\DBAL;
+namespace PSX\Structor\Provider\Callback;
 
 use PSX\Structor\Provider\ProviderEntityInterface;
-use PSX\Structor\Provider\ParameterResolver;
 
 /**
  * Entity
  *
  * @author Christoph Kappestein <christoph.kappestein@gmail.com>
  */
-class Entity extends DBALAbstract implements ProviderEntityInterface
+class Entity extends CallbackAbstract implements ProviderEntityInterface
 {
-    public function getResult(array $context = null)
-    {
-        return $this->connection->fetchAssoc(
-            $this->sql,
-            ParameterResolver::resolve($this->parameters, $context)
-        );
-    }
 }

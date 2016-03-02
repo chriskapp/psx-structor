@@ -14,14 +14,14 @@ use RuntimeException;
 use PSX\Structor\Reference;
 
 /**
- * DatabaseUtil
+ * ParameterResolver
  *
  * @author Christoph Kappestein <christoph.kappestein@gmail.com>
  */
-class DatabaseUtil
+class ParameterResolver
 {
     /**
-     * Resolves prepared statment parameters agains a context
+     * Resolves parameters agains a context
      *
      * @param array $parameters
      * @param array $context

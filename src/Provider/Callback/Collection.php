@@ -8,23 +8,15 @@
  * that was distributed with this source code.
  */
 
-namespace PSX\Structor\Provider\DBAL;
+namespace PSX\Structor\Provider\Callback;
 
 use PSX\Structor\Provider\ProviderCollectionInterface;
-use PSX\Structor\Provider\ParameterResolver;
 
 /**
  * Collection
  *
  * @author Christoph Kappestein <christoph.kappestein@gmail.com>
  */
-class Collection extends DBALAbstract implements ProviderCollectionInterface
+class Collection extends CallbackAbstract implements ProviderCollectionInterface
 {
-    public function getResult(array $context = null)
-    {
-        return $this->connection->fetchAll(
-            $this->sql,
-            ParameterResolver::resolve($this->parameters, $context)
-        );
-    }
 }
